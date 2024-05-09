@@ -74,14 +74,14 @@ Optimized literal count: 34
 
 # 理論說明
 ## Example of General Network
-![螢幕擷取畫面 2024-05-09 230826](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/b7e29689-89f1-45c9-858e-6aa6436445ba)
+![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/b7e29689-89f1-45c9-858e-6aa6436445ba)
 ## Decomposition
 * Introduce new variables/blocks into the network
 * Example:
 \- v = a'd + bd +c'd +ae'
 \- j = a' + b + c'; v = jd + ae';
 
-![image](https://hackmd.io/_uploads/B1R1uP5GA.png)
+![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/96879149-ed0b-4be1-9de2-f76f7cc1dec3)
 
 ## Extraction
 * Find a common sub-expression of two(or more) expression
@@ -91,14 +91,15 @@ Optimized literal count: 34
 \- p = ce + de; t = ac + ad + bc + bd + e;
 \- p = ( c + d ) e; t = ( c + d ) ( a + b ) + e;
 \- k = c + d; p = ke; t = ka + kb + e
-![image](https://hackmd.io/_uploads/SJpc_PqM0.png)
+![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/18498448-d28c-4397-beab-992893640c62)
+
 
 ## Algebraic Division
-![image](https://hackmd.io/_uploads/By3iFDqfR.png)
+![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/d1f10fd3-542f-40e6-b424-feb8ace0bc69)
 ### Example
-![image](https://hackmd.io/_uploads/Bk3k5vqzA.png)
+![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/c0296b62-ce12-4fdd-bacd-d5f8637bed99)
 ### Algorithm for Division
-![image](https://hackmd.io/_uploads/rJ2-qwqz0.png)
+![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/aae84f43-248b-4d6f-8e53-182fbe211bba)
 
 ## Definitions
 * Cube-free expression
@@ -110,13 +111,14 @@ Optimized literal count: 34
 \- **Cube-free  quotient** of the expression **divided by a cube** (The cube is called co-kernel)
 * Kernel set of an expression f is denoted by K(f)
 ### Example
-![image](https://hackmd.io/_uploads/Hkay2v9MA.png)
+![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/44804e08-0a51-4cf6-96f8-7fe5392e3493)
 
 ## Kernel method
 ### Recursive Kernel Computation
-![image](https://hackmd.io/_uploads/r1IGTvqfR.png)
+![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/e91be321-f79f-4d13-b791-4bd95d2c8d49)
+
 #### Example
-![image](https://hackmd.io/_uploads/ryUNpw5GC.png)
+![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/53224dbb-d8d6-4c94-b8e9-3deb766762ec)
 
 ### Single cube extraction
 * Extract one cube from two (or more) subexpressions [Brayton]
@@ -126,7 +128,7 @@ Optimized literal count: 34
 \- Use additional variables to tag the expressions
 * Extract chosen co-kernel
 #### Example
-![image](https://hackmd.io/_uploads/Byr7CPcMC.png)
+![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/93e31d2d-eedd-4427-b5d1-46098a314a75)
 
 ### Multiple-cube Extraction
 * We need a cube/kernel matrix
@@ -134,7 +136,7 @@ Optimized literal count: 34
 \- Kernels are now cubes in these new variables
 * Equivalently, find a co-kernel of the auxiliary expression that is the sum of the relabeled expre
 #### Example
-![image](https://hackmd.io/_uploads/HkjcCP9fA.png)
+![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/e4abe636-09d4-404e-bffa-ef89634fa203)
 
 # 程式流程
 ```c!
