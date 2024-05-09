@@ -86,8 +86,8 @@ Optimized literal count: 34
 ## Extraction
 * Find a common sub-expression of two(or more) expression<br/>
 \- Extract new sub-expression as new function<br/>
-\- Introduce new block into the circuit<br/>
-* Example
+\- Introduce new block into the circuit
+* Example<br/>
 \- p = ce + de; t = ac + ad + bc + bd + e;<br/>
 \- p = ( c + d ) e; t = ( c + d ) ( a + b ) + e;<br/>
 \- k = c + d; p = ke; t = ka + kb + e<br/>
