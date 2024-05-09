@@ -1,6 +1,6 @@
 # 介紹
-如今，大多數的combinational circuits都是以multi-level Boolean network的形式實現的。邏輯閘的fine granularity為電路設計師提供了功率消耗、面積與效能最佳化的多種選擇。
-然而，**multi-level logic synthesis**的設計彈性帶來了**很大的運算複雜度**。目前只制定了**少數受限的方法**來進行multi-level Boolean **optimization**。
+如今，大多數的combinational circuits都是以multi-level Boolean network的形式實現的。邏輯閘的fine granularity為電路設計師提供了功率消耗、面積與效能最佳化的多種選擇。<br/>
+然而，**multi-level logic synthesis**的設計彈性帶來了**很大的運算複雜度**。目前只制定了**少數受限的方法**來進行multi-level Boolean **optimization**。<br/>
 在這個專案中，我們實現一種基於**啟發式的algebraic multi-level Boolean network generation**，以實現**最少literal count**，進而降低面積。通過應用algebraic division, decomposition, kernel extraction, and substitution等操作，輸出BLIF格式的multi-level Boolean network。
 
 # 如何使用
