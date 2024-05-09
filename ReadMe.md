@@ -74,7 +74,7 @@ Optimized literal count: 34
 
 # 理論說明
 ## Example of General Network
-![image](https://hackmd.io/_uploads/BJ4lPD9fC.png)
+![螢幕擷取畫面 2024-05-09 230826](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/b7e29689-89f1-45c9-858e-6aa6436445ba)
 ## Decomposition
 * Introduce new variables/blocks into the network
 * Example:
