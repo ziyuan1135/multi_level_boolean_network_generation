@@ -77,19 +77,19 @@ Optimized literal count: 34
 ![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/b7e29689-89f1-45c9-858e-6aa6436445ba)
 ## Decomposition
 * Introduce new variables/blocks into the network
-* Example:
-\- v = a'd + bd +c'd +ae'
+* Example:<br/>
+\- v = a'd + bd +c'd +ae'<br/>
 \- j = a' + b + c'; v = jd + ae';
 
 ![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/96879149-ed0b-4be1-9de2-f76f7cc1dec3)
 
 ## Extraction
-* Find a common sub-expression of two(or more) expression
-\- Extract new sub-expression as new function
+* Find a common sub-expression of two(or more) expression<br/>
+\- Extract new sub-expression as new function<br/>
 \- Introduce new block into the circuit
 * Example
-\- p = ce + de; t = ac + ad + bc + bd + e;
-\- p = ( c + d ) e; t = ( c + d ) ( a + b ) + e;
+\- p = ce + de; t = ac + ad + bc + bd + e;<br/>
+\- p = ( c + d ) e; t = ( c + d ) ( a + b ) + e;<br/>
 \- k = c + d; p = ke; t = ka + kb + e
 ![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/18498448-d28c-4397-beab-992893640c62)
 
@@ -103,11 +103,11 @@ Optimized literal count: 34
 
 ## Definitions
 * Cube-free expression
-\- Expression that cannot be factored by a cube
-\- Example:
-\* a + bc is cube free
-\* abd and ab + ac are not
-* Kernel of an expression
+\- Expression that cannot be factored by a cube<br/>
+\- Example:<br/>
+\* a + bc is cube free<br/>
+\* abd and ab + ac are not<br/>
+* Kernel of an expression<br/>
 \- **Cube-free  quotient** of the expression **divided by a cube** (The cube is called co-kernel)
 * Kernel set of an expression f is denoted by K(f)
 ### Example
@@ -123,16 +123,16 @@ Optimized literal count: 34
 ### Single cube extraction
 * Extract one cube from two (or more) subexpressions [Brayton]
 * Form an auxiliary expression, which is the union (sum) of all local expression
-* Find the largest co-kernel
-\- Corresponding kernel must belong to two (or more) different expressions
+* Find the largest co-kernel<br/>
+\- Corresponding kernel must belong to two (or more) different expressions<br/>
 \- Use additional variables to tag the expressions
 * Extract chosen co-kernel
 #### Example
 ![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/93e31d2d-eedd-4427-b5d1-46098a314a75)
 
 ### Multiple-cube Extraction
-* We need a cube/kernel matrix
-\- Relabel cubes by new variables
+* We need a cube/kernel matrix<br/>
+\- Relabel cubes by new variables<br/>
 \- Kernels are now cubes in these new variables
 * Equivalently, find a co-kernel of the auxiliary expression that is the sum of the relabeled expre
 #### Example
