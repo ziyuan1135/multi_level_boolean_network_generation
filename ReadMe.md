@@ -102,7 +102,7 @@ Optimized literal count: 34
 ![image](https://github.com/ziyuan1135/multi_level_boolean_network_generation/assets/82150613/aae84f43-248b-4d6f-8e53-182fbe211bba)
 
 ## Definitions
-* Cube-free expression
+* Cube-free expression<br/>
 \- Expression that cannot be factored by a cube<br/>
 \- Example:<br/>
 \* a + bc is cube free<br/>
