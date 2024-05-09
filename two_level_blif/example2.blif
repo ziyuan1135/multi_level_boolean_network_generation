@@ -1,0 +1,13 @@
+.model top
+.inputs a b c d e f g
+.outputs x y z
+.names a b c d e f x
+111--1 1
+---11- 1
+.names a b c d e f y
+1111-- 1
+---111 1
+.names a b c d e g z
+111--1 1
+---111 1
+.end
