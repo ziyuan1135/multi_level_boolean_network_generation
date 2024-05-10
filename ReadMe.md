@@ -193,3 +193,26 @@ void optimization() {
 3. 利用Multiple-cube Extraction方法尋找最大的sub-kernel，其中sub-kernel屬於兩個以上的expressions。若找不到，則跳到(4.)
 4. 對每個expression進行kernel或co-kernel的替換
 5. 重複步驟(1.) ~ (4.)直到沒有kernel或替換後不會減少literal count
+
+## 評估替換後的Literal Count
+### Definition
+$C = C_1 + C_2 + ...+ C_M = \displaystyle\sum_{i=1}^{M}C_i$
+
+$Q = Q_1 + Q_2 + ... + Q_N = \displaystyle\sum_{j=1}^NQ_j$
+
+$f = C \cdot Q = \displaystyle\sum_{i=1}^MC_i \cdot \sum_{j=1}^NQ_j = \sum_{i=1}^M \sum_{j=1}^NC_i \cdot Q_j$
+
+$f' = C \cdot Q = C \cdot \displaystyle\sum_{j=1}^N Q_j = \sum_{j=1}^N C \cdot Q_j$
+
+### Literal Count of f(原式)
+$\displaystyle\sum_{i=1}^M(\vert C_i \vert \cdot N + \sum_{j=1}^N \vert Q_j \vert)$
+
+$\displaystyle= N \cdot \sum_{i=1}^M \vert C_i \vert + \sum_{i=1}^M \sum_{j=1}^N \vert Q_j \vert$
+
+$\displaystyle= N \cdot \sum_{i=1}^M \vert C_i \vert + M \cdot \sum_{j=1}^N \vert  Q_j\vert$
+
+### Literal Count of f'(取代後)
+$\displaystyle(\sum_{j=1}^N\vert Q_j \vert) + N + \sum_{i=1}^M\vert C_i \vert$
+
+### Literal Count of (f - f')
+$\displaystyle((N-1) \cdot \sum_{i=1}^M \vert C_i \vert) - N + (M-1) \cdot \sum_{j=1}^N\vert Q_j \vert$
